@@ -1,11 +1,11 @@
 #!/bin/bash
 
 ########## CONFIG ##########
-# Load environment variables from .env file
-if [[ -f .env ]]; then
-    source .env
+# Load environment variables from config.sh file
+if [[ -f config.sh ]]; then
+    source config.sh
 else
-    echo "Error: .env file not found. Read the README.md file for instructions."
+    echo "Error: config.sh file not found. Read the README.md file for instructions."
     exit 1
 fi
 ############################
@@ -66,6 +66,7 @@ backups=$(ssh $user@$server_ip "for item in $server_backup_folder/*; do size=\$(
 check_success "SSH failed. Please check the connection and paths."
 
 # Display the list with line numbers using gum
+echo "Select a backup to sync:"
 IFS=$'\n' backups=($backups)  # Convert to array
 selected=$(for i in "${!backups[@]}"; do
     echo "$i) ${backups[$i]}"
