@@ -24,6 +24,18 @@ You can download the script from this repository or clone it using git:
 git clone https://github.com/RomainPierre7/ssh-backup-sync
 ```
 
+### SSH
+
+You need to have ssh access to the server where the backups are stored.
+
+### Rclone
+
+You need to have rclone configured on your local machine. You can configure rclone by running:
+
+```bash
+rclone config
+```
+
 ### Configure the script
 
 Copy the `config.example.sh` file to `config.sh`:
@@ -51,18 +63,6 @@ Make the script executable:
 
 ```bash
 chmod +x backup_sync.sh
-```
-
-### SSH
-
-You need to have ssh access to the server where the backups are stored.
-
-### Rclone
-
-You need to have rclone configured on your local machine. You can configure rclone by running:
-
-```bash
-rclone config
 ```
 
 ## Usage
