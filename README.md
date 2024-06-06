@@ -1,4 +1,4 @@
-# unraid-ssh-backup-sync
+# ssh-backup-sync
 
 This is a simple script to **copy a backup from a remote server** (e.g. Unraid) to a local machine (e.g. your laptop) using *SSH*. Then it will sync the backup to a remote server (e.g. google drive) using *rclone*.
 
