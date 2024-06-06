@@ -21,7 +21,7 @@ To use this script you need:
 You can download the script from this repository or clone it using git:
 
 ```bash
-git clone https://github.com/RomainPierre7/unraid-ssh-backup-sync
+git clone https://github.com/RomainPierre7/ssh-backup-sync
 ```
 
 ### Configure the script
